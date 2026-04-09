@@ -19,7 +19,7 @@ The five `drift_*.csv` files represent simulated **production batches**, each re
 
 ## 2. Dataset Origins
 
-**Source:** [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
+**Source:** [Kaggle  Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
 **Original publisher:** Machine Learning Group, Université Libre de Bruxelles (ULB)
 
 The original dataset contains **284,807 real credit card transactions** collected over **two days in September 2013** by European cardholders. For privacy reasons, the features V1–V28 have been transformed using **Principal Component Analysis (PCA)** the original feature names and meanings are confidential. Only `Time`, `Amount`, and `Class` remain in their original form.
