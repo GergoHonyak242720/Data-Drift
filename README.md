@@ -157,8 +157,8 @@ Use the sidebar dropdown to switch between the five production batches.
 | **drift_1** | Localised covariate drift (V1 spike, PSI=2.05) | ~0.51 | 🚨 Retrain — single feature collapse breaks the model |
 | **drift_2** | Feature distribution shift (Amount, PSI=2.73) | ~0.48 | 🚨 Retrain — model inverts predictions |
 | **drift_3** | Label drift (3× fraud rate) | ~0.92 | ⚠️ Recalibrate threshold, do not retrain |
-| **drift_4** | Silent distributed drift (all features shift slightly) | ~0.45 | 🚨 Retrain — most dangerous; no single PSI spike but model collapses |
-| **drift_5** | Label drift only (11.5× fraud rate, patterns stable) | ~0.91 | ✅ Model copes; recalibrate threshold if needed |
+| **drift_4** | Silent distributed drift (no PSI/KS actionable flags) | 0.4480 | 🚨 Retrain — model ranking inverted; missed all ~25 frauds; Layer 1 blind spot |
+| **drift_5** | Label drift only (11.5× fraud rate, patterns stable) | ~0.91 | ⚠️ Warning (KS flags 28 features); recalibrate threshold, do not retrain |
 
 ### Critical Insight
 
