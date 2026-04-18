@@ -64,7 +64,7 @@ Running the notebooks in order generates the following artifacts in `notebooks/`
 
 ```bash
 git clone https://github.com/GergoHonyak242720/Data-Drift
-cd credit_card_challenge
+cd Data-Drift
 ```
 
 ### 2. Install dependencies
