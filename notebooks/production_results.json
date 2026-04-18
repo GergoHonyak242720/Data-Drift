@@ -1,0 +1,92 @@
+{
+  "drift_1": {
+    "F1": 0.0,
+    "AUC-ROC": 0.5127,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "PR-AUC": 0.002,
+    "fraud_rate": 0.1933,
+    "confusion_matrix": [
+      [
+        14850,
+        121
+      ],
+      [
+        29,
+        0
+      ]
+    ]
+  },
+  "drift_2": {
+    "F1": 0.009,
+    "AUC-ROC": 0.4786,
+    "Precision": 0.0051,
+    "Recall": 0.0417,
+    "PR-AUC": 0.0017,
+    "fraud_rate": 0.16,
+    "confusion_matrix": [
+      [
+        14780,
+        196
+      ],
+      [
+        23,
+        1
+      ]
+    ]
+  },
+  "drift_3": {
+    "F1": 0.2364,
+    "AUC-ROC": 0.9179,
+    "Precision": 0.1503,
+    "Recall": 0.5532,
+    "PR-AUC": 0.4195,
+    "fraud_rate": 0.5222,
+    "confusion_matrix": [
+      [
+        17612,
+        294
+      ],
+      [
+        42,
+        52
+      ]
+    ]
+  },
+  "drift_4": {
+    "F1": 0.0,
+    "AUC-ROC": 0.448,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "PR-AUC": 0.0014,
+    "fraud_rate": 0.1667,
+    "confusion_matrix": [
+      [
+        14741,
+        234
+      ],
+      [
+        25,
+        0
+      ]
+    ]
+  },
+  "drift_5": {
+    "F1": 0.4444,
+    "AUC-ROC": 0.9089,
+    "Precision": 0.3844,
+    "Recall": 0.5267,
+    "PR-AUC": 0.462,
+    "fraud_rate": 2.0,
+    "confusion_matrix": [
+      [
+        14447,
+        253
+      ],
+      [
+        142,
+        158
+      ]
+    ]
+  }
+}

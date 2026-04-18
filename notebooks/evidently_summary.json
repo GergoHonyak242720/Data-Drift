@@ -1,0 +1,32 @@
+{
+  "drift_1": {
+    "n_columns": 29,
+    "n_drifted": 22,
+    "share_drifted": 0.759,
+    "dataset_drift": true
+  },
+  "drift_2": {
+    "n_columns": 29,
+    "n_drifted": 22,
+    "share_drifted": 0.759,
+    "dataset_drift": true
+  },
+  "drift_3": {
+    "n_columns": 29,
+    "n_drifted": 18,
+    "share_drifted": 0.621,
+    "dataset_drift": true
+  },
+  "drift_4": {
+    "n_columns": 29,
+    "n_drifted": 21,
+    "share_drifted": 0.724,
+    "dataset_drift": true
+  },
+  "drift_5": {
+    "n_columns": 29,
+    "n_drifted": 20,
+    "share_drifted": 0.69,
+    "dataset_drift": true
+  }
+}
