@@ -78,7 +78,7 @@ BATCH_LABELS = {
     "drift_2": "Batch 2 — Low Fraud",
     "drift_3": "Batch 3 — Rising Fraud",
     "drift_4": "Batch 4 — Covariate Shift",
-    "drift_5": "Batch 5 — Concept Drift",
+    "drift_5": "Batch 5 — Label Drift (12× baseline)",
 }
 
 DRIFT_TYPES = {

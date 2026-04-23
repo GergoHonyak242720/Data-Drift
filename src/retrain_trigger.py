@@ -7,7 +7,7 @@ decision logic to produce a structured verdict.
 Decision logic (consistent with dashboard and project methodology):
 
   PRIMARY TRIGGERS (automated, no labels needed):
-    1. AUC-ROC < 0.5        → model is inverting predictions, actively harmful
+    1. AUC-ROC < 0.5        → model has lost discriminative ability, not safe to deploy
     2. Feature fails both    → two-key KS + PSI evidence of distribution
        KS and PSI critical     collapse beyond safe operating bounds
 
@@ -111,9 +111,9 @@ def evaluate_trigger(monitor_report: dict,
             "status":   "critical",
             "title":    "🚨 RETRAIN REQUIRED",
             "reason":   (
-                f"AUC-ROC={auc:.4f} is below random (0.5). "
-                f"The model is inverting its predictions — it is now "
-                f"more likely to flag legitimate transactions than fraud. "
+                f"AUC-ROC={auc:.4f} is near random. "
+                f"The model has lost discriminative ability — its scores "
+                f"no longer meaningfully distinguish fraud from legitimate transactions. "
                 f"Actionable features: {actionable if actionable else 'none flagged by PSI/KS'}."
             ),
             "action":   (
@@ -150,8 +150,8 @@ def evaluate_trigger(monitor_report: dict,
             "status":   "warning",
             "title":    "⚠️  MONITOR CLOSELY",
             "reason":   (
-                f"AUC-ROC dropped by {auc_drop:.4f} to {auc:.4f}. "
-                f"Model ranking ability is degrading but not yet inverted. "
+                f"AUC-ROC dropped by {abs(auc_drop):.4f} to {auc:.4f}. "
+                f"Model ranking ability is degrading. "
                 f"No features failed the two-key drift test — drift may be "
                 f"distributed across many features at moderate levels."
             ),
